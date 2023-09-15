@@ -2,176 +2,224 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins' , sans-serif;
 }
 body{
-    background: #000928;;
+    background: #000928;
     color: #fff;
 }
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)), url('https://assets.nflxext.com/ffe/siteui/vlv3/42df4e1f-bef6-499e-87ff-c990584de314/5e7c383c-1f88-4983-b4da-06e14c0984ba/IN-en-20230904-popsignuptwoweeks-perspective_alpha_website_large.jpg');
     padding: 10px 8%;
-    background-size: cover;
+    background-size:auto;
     position: relative;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 15px 20px;
 }
 nav .logo{
-    width: 150px;
+    width: 140px;
+    filter: contrast(150%);
     cursor: pointer;
 }
-nav button{
+button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
     border: 0;
-    outline: 0;
-    cursor: pointer;
-    padding: 10px 20px;
+    background: #ff0000;
+    font-size: 15px;
+    font-weight: 200;
     color: #fff;
-    background: #db0001;
-    font-size: 12px;
-    border-radius: 5px;
-    margin-left: 10px;
 }
-.lang-btn{
-    display: inline-flex;
+.lang{
     background: transparent;
-    align-items: center;
-    border: 1px solid #fff;
-    padding: 8px 12px;
+    border: 1px solid #817f7f;
 }
-.lang-btn img{
-    width: 12px;
+.lang img{
+    width: 8px;
     margin-left: 10px;
+
 }
-.lang-btn:hover{
-    background: #fff;
-    color: #db0001;
+nav .sign{
+    margin-left: 15px;
+    transition: all 0.2s ease;
+}
+.sign:hover{
+    background: #d20303;
 }
 .header-content{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     text-align: center;
-    margin-top: 100px;
+    transform: translate(-50%, -50%);
 }
 .header-content h1{
-    font-size: 60px;
+    width: 120%;
     line-height: 70px;
-    font-weight: 600;
-    max-width: 650px;
+    font-size: 45px;
+    font-weight: 900;
 }
-.header-content h3{
-    font-weight: 400;
-    margin-bottom: 50px;
+.header-content p{
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
 }
-.header-content h3:hover{
-    color: #db0001;
-}
-.header-content p:hover{
-    color: #db0001;
-}
-.email-signup{
-    background: #fff;
-    overflow: hidden;
-    display: flex;
-    border-radius: 5px;
-    align-items: center;
-    margin-top: 30px;
-}
-.email-signup input{
+.email{
     flex: 1;
+}
+.email input{
     border: 0;
     outline: 0;
-    margin-left: 20px;
-}
-.email-signup button{
-    background: #db0001;
-    border: 0;
-    cursor: pointer;
+    background: black;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    opacity: 0.5;
     color: #fff;
-    padding: 15px 30px;
+    width: 420px;
+    border-radius: 5px;
+}
+.email input text{
+    color: #fff;
+}
+.email input ::placeholder{
+    font-size: 20px;
+    color: #fff;
+    opacity: 100%;
+}
+.email button{
+    background: red;
+    color: #fff;
+    outline: none;
+    border: 0;
+    padding: 12px 16px;
+    border-radius: 3px;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.email button:hover{
+    background: #d20303;
+}
+.email button i{
+    margin-left: 10px;
+    font-size: 20px;
 }
 .features{
+    background: #000;
+    border-top: 10px solid rgb(36, 36, 36);
     padding: 50px 12%;
-    font-size: 22px;
-    background: linear-gradient(333.08deg, #000235 29.2%, #010F42 71.93%, #E40913 111.25%);
-    margin-left: 30px;
-    border-radius: 10px;
-    width: 95%;
 }
 .row{
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
-    padding: 50px 0;
     align-items: center;
 }
-.text-col{
+.row .text-col{
     flex-basis: 50%;
     margin-bottom: 20px;
+}
+.text-col h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.text-col p{
+    margin-top: 20px;
+    font-size: 20px;
 }
 .img-col{
     flex-basis: 50%;    
     margin-bottom: 20px;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/enjoyOnTv/en.png');
 }
 .img-col img{
     display: block;
     width: 100%;
     margin: auto;
 }
-.features h2{
-    font-size: 48px;
-    font-weight: 600;
+.img-col1{
+    flex-basis: 50%;
     margin-bottom: 20px;
 }
-hr{
+.img-col1 img{
+    display: block;
     width: 100%;
-    background: #01031e;
-    outline: 0;
-    border: 0;
-    height: 8px;
+    margin: auto;
+}
+.box{
+    display: flex;
+    padding: 10px;
+    border: 1px solid grey;
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: -5%;
+}
+.box img{
+    width: 50px;
+}
+.box p{
+    margin-left: 30px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.box span{
+    font-size: 15px;
+}
+.box i{
+    margin-left: 50px;
+    color: dodgerblue;
+    
 }
 .faq{
-    padding: 10px 12%;
-    text-align:left;
+    width: 100%;
+    height: 140vh;
+    border-top: 10px solid rgb(36, 36, 36);
+    background: #000;
 }
-.faq h2{
-    font-size: 40px;
+.faq h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 3%;
 }
 .accordian{
-    margin: 60px auto;
-    width: 100%;
-    max-width: 750px;
+    margin: 1% 15%;
+    width: 120%;
+    max-width: 800px;
 }
 .accordian li{
     list-style: none;
-    width: 100%;
-    padding: 5px;
+    width: 120%;
+    padding: 5px ;
 }
 .accordian li label{
     display: flex;
     align-items: center;
-    font-size: 18px;
-    font-weight: 500;
+    background-color: rgb(45,45,45);
     padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
     margin-bottom: 2px;
-    cursor: pointer;
+    padding: 20px;
     position: relative;
-    background: rgba(19, 33, 68, 1);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
 }
 .accordian li label:hover{
-    background: rgb(31, 49, 96);
-    transition: transform 0.5s;
-}   
-label::after{
+    background-color: #3e3e3e;
+}
+.accordian li label::after{
     content: '+';
-    font-size: 34px;
+    font-size: 40px;
+    font-weight: 100;
     position: absolute;
     transition: transform 0.5s;
     right: 20px;
@@ -180,86 +228,165 @@ input[type="radio"]{
     display: none;
 }
 .accordian .content{
-    background: rgba(19, 33, 68, 1);
+    background: #3e3e3e;
+    padding: 0px 20px;
     text-align: left;
-    padding: 0 20px;
-    max-height: 0;
-    transition: max-height 0.5s, padding 0.5s;
     overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    max-height: 0;
 }
 .accordian input[type="radio"]:checked + label + .content{
     max-height: 600px;
     padding: 30px 20px;
 }
-.accordian input[type="radio"]:checked + label::after{
+.accordian ul li input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
 }
-.faq .email-signup{
-    max-width: 500px;
-    margin: 20px auto 60px;
-    background: #1b1a1a;
-    border: 1px solid #ccc;
+form{
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
 }
-.faq .email-signup input{
-    background: #1b1a1a;
-    color: #eae3e3;
-    font-size: 15px;
+form p{
+    margin-bottom: 20px;
 }
-.faq .email-signup input::placeholder{
-    color: #ccc;
+.footer{
+    width: 100%;
+    height: 50vh;
+    border-top: 10px solid #3e3e3e;
+    background: #000;
 }
-.faq small{
-    margin-left: 22%;
-    font-size: 20px;
-}
-.footer h2{
-    font-size: 18px;
+.footer h4{
+    color: rgb(185, 185, 185);
     font-weight: 100;
-    padding: 10px 12%;
-    color: #ccc;
+    padding: 4% 12%;
 }
-.footer u{
-    cursor: pointer;
-}
-.footer .col1{
-    margin-top: 40px;
-    width: 50%;
-}
-.footer .col1 ul li{
-    font-size: 14px;
-    list-style: none;
-    padding: 10px 10%;
-    color: #ccc;
-    cursor: pointer;
-}
-.footer .col2{
-    margin-top: 40px;
-    width: 50%;
-}
-.footer .col2 ul li{
-    font-size: 14px;
-    list-style: none;
-    padding: 10px 10%;
-    color: #ccc;
-    cursor: pointer;
-}
-.footer .manage{
-    margin-left: 10%;
-    width: 90%;
+.footer .columns{
     display: flex;
-    justify-content: space-between;
 }
-.name{
-    margin-top: 40px;
-    height: 10vh;
-    margin-left: 38%;
+.columns div{
+    margin-left: 12%;
+    margin-top: -3%;
 }
-.name small{
-    font-size: 20px;
+.columns div ul li{
+    list-style: none;
+    line-height: 30px;
+    font-size: 14px;
 }
-.name small:hover{
-    color:#7084ce;
+.columns div ul li a{
+    color: rgb(185, 185, 185);
 }
-.header-content button:hover{
-    background: #fd3640;
+#btn2{
+    margin: 2% 12%;
+}
+#netflix{
+    padding: 0;
+    margin-left: 12%;
+}
+#Copyright{
+    text-align: center;
+    font-weight: 100;
+    font-size: 18px;
+    background: #000;
+    color: #3e3e3e;
+}
+#Copyright:hover {
+    color: #939393;
+}
+
+@media only screen and (max-width: 360px) {
+    body{
+        background: #ff0000;
+    }
+    nav .logo{
+        width: 90px;
+        filter: contrast(150%);
+        cursor: pointer;
+        margin-left: -20px;
+    }
+    nav div{
+        display: flex;
+        margin-left: 40px;
+    }
+    button{
+        padding: 5px 8px;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+        border: 0;
+        background: #ff0000;
+        font-size: 12px;
+        font-weight: 200;
+        color: #fff;
+    }
+    .header-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 100px;
+        
+    }
+    .header-content h1{
+        text-align: center;
+        padding: 20px;
+        margin-left: 28px;
+        line-height: 30px;
+        width: 360px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .header-content p{
+        padding: 0 50px;
+        line-height: 18px;
+        font-size: 18px;
+    }
+    .email{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .email input{
+        width: 300px;
+    }
+    .email button{
+        margin-top: 25px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .row .text-col{
+        width: 120%;
+    }
+    .row .text-col h1{
+        font-size: 30px;
+    }
+    .row .text-col p{
+        font-size: 20px;
+    }
+    .box{
+        width: 100%;
+        margin-left: -10px;
+    }
+    .faq{
+        align-items: center;
+    }
+    .faq h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .faq .accordian{
+        margin-left: 5px;
+        width: 80%;
+    }
+    .accordian li label{
+        font-size: 20px;
+    }
+    #Copyright{
+        margin-top: 5px;
+        color: red;
+        font-size: 15px;
+    }
 }
